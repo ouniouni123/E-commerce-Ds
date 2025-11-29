@@ -1,0 +1,125 @@
+:root {
+  --beige: #fdf5ee;
+  --rose: #fce7f3;
+  --rose-strong: #f472b6;
+  --rose-dark: #ec4899;
+  --text-main: #3a3a3a;
+  --text-muted: #8e8e8e;
+  --white: #ffffff;
+  --border: #eed9d0;
+  --shadow-soft: rgba(0, 0, 0, 0.08);
+}
+
+body {
+  background: var(--beige);
+  color: var(--text-main);
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+  background: white !important;
+  border-bottom: 1px solid var(--border);
+}
+
+/* HERO SECTION */
+.hero-section {
+  padding-block: 4rem;
+  background: linear-gradient(120deg, var(--rose), var(--beige));
+  border-bottom: 1px solid var(--border);
+}
+
+/* PRODUCT CARD */
+.product-card {
+  background: var(--white);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  border: 1px solid var(--border);
+}
+
+.product-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 18px 36px var(--shadow-soft);
+}
+
+.product-image-wrapper {
+  position: relative;
+  height: 230px;
+  background: var(--rose);
+}
+
+.product-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.35s ease;
+}
+
+.product-card:hover .product-image {
+  transform: scale(1.12);
+}
+
+/* BADGES */
+.badge-featured,
+.badge-new,
+.badge-sale {
+  position: absolute;
+  top: 12px;
+  padding: 4px 10px;
+  border-radius: 100px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: white;
+}
+
+.badge-featured {
+  right: 12px;
+  background: var(--rose-dark);
+}
+
+.badge-new {
+  left: 12px;
+  background: #22c55e;
+}
+
+.badge-sale {
+  right: 12px;
+  background: #ef4444;
+}
+
+/* BUTTONS */
+.btn-dark {
+  background: var(--rose-dark);
+  border-color: var(--rose-dark);
+}
+
+.btn-dark:hover {
+  background: #be185d;
+  border-color: #be185d;
+}
+
+.btn-outline-dark {
+  border-color: var(--rose-dark);
+  color: var(--rose-dark);
+}
+
+.btn-outline-dark:hover {
+  background: var(--rose-dark);
+  color: white;
+}
+
+/* SEARCH + FILTER */
+.search-bar {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 10px 14px;
+  background: white;
+}
+
+/* FOOTER */
+footer {
+  background: white;
+  border-top: 1px solid var(--border);
+  color: var(--text-muted);
+}
